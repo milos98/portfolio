@@ -54,6 +54,7 @@ nav{
 
 .about-txt {
     height: 20vw;
+    text-align: justify;
 }
 
 .slider {
@@ -93,6 +94,10 @@ nav{
     margin-top: 0;
 }
 
+#show div {
+    width: 100%;
+}
+
 .arr {
     height: 100%;
     position: absolute;
@@ -100,7 +105,7 @@ nav{
 
 .prev, .next {
   cursor: pointer;
-  padding: 20px;
+  padding: 4.165%;
   width:100%;
   text-align: center;
   color: #707070;
@@ -159,6 +164,12 @@ nav{
 .contact a{
     color: #707070;
     text-decoration: underline;
+}
+
+@media (max-width: 992px){
+    .about .row {
+        height: 100vh;
+    }
 }
 
 @media (max-width: 992px){
