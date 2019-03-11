@@ -173,7 +173,7 @@ nav{
         text-align: justify;
     }
 
-    .parallax {
+    .parallax-container {
         height: 250px;
     }
 }
