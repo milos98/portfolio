@@ -1,9 +1,9 @@
 html {
     scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 body{
-    font-family: 'Nanum Gothic', sans-serif;
     color: #707070;
     overflow-x: hidden;
 }
@@ -61,6 +61,10 @@ nav{
   max-width: 1000px;
   height: 32vw;
   margin: auto;
+}
+
+.work h2{
+    padding: 0.5em 0;
 }
 
 .projekat {
@@ -161,9 +165,9 @@ nav{
     background: linear-gradient(to bottom, #FFFFFF, #9dddd9);
 }
 
-.contact a{
+.contact p{
     color: #707070;
-    text-decoration: underline;
+    margin-bottom: 0;
 }
 
 @media (max-width: 992px){
