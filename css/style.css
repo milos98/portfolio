@@ -5,6 +5,7 @@ html {
 body{
     font-family: 'Nanum Gothic', sans-serif;
     color: #707070;
+    overflow-x: hidden;
 }
 
 nav{
@@ -12,7 +13,7 @@ nav{
 }
 
 .nav-wrapper {
-    margin: 0 2rem;
+    margin: 0 2em;
 }
 
 .nav-wrapper a {
@@ -20,13 +21,15 @@ nav{
 }
 
 .nav-wrapper ul li {
-    padding: 0 0.7rem;
+    padding: 0 0.7em;
     font-weight: bold;
     color: #707070;
 }
 
 .hello {
-    padding: 200px 0;
+    padding-top: 5em; 
+    height: 100vh;
+    width: 100vw;
 }
 
 .hello-txt {
@@ -38,7 +41,7 @@ nav{
 }
 .hello p{
     font-style: italic;
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 .about .row {
@@ -55,7 +58,7 @@ nav{
 
 .slider {
   max-width: 1000px;
-  height: 28vw;
+  height: 32vw;
   margin: auto;
 }
 
@@ -64,29 +67,35 @@ nav{
 }
 
 .project{
-    height: 28vw;
+    height: 32vw;
     padding: 0 !important;
     background-size: cover !important;
 }
 
 .project p {
-    padding: 4rem 3rem;
+    padding: 1em 2em;
 }
 
-.hide {
-    display: none;
-}
-
-#show {
+.show {
     background-color: rgba(0, 0, 0, 0.53);
+    padding: 0 !important;
+    margin: 0 !important;
     color: #bbb;
     height: 100%;
     width: 100%;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
     transition: all 2s ease;
 }
 
+#show h3{
+    margin-top: 0;
+}
+
 .arr {
-    height: 29vw;
+    height: 100%;
+    position: absolute;
 }
 
 .prev, .next {
@@ -150,4 +159,17 @@ nav{
 .contact a{
     color: #707070;
     text-decoration: underline;
+}
+
+@media (max-width: 992px){
+    
+    .hello div{
+        display: block;
+        text-align: center; 
+    }
+
+    .about-txt {
+        margin-top: 1em;
+        text-align: justify;
+    }
 }
