@@ -19,6 +19,9 @@
 <body>
     <nav class="z-depth-0">
         <div class="nav-wrapper">
+            <a href="#" id="hamburger" data-target="slide-out" class="sidenav-trigger"><i
+                    class="material-icons">menu</i></a>
+
             <a href="" class="brand-logo">LOGO</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#about">About</a></li>
@@ -63,12 +66,11 @@
                     class="fa fa-github"></i>Github</a>
         </li>
     </ul>
-    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
     <div class="hello row">
         <div>
-        <img src="img/head.jpg" alt="" class="col s10 push-s1 m6 push-m3 l3 push-l2 circle">
-    </div>
+            <img src="img/head.jpg" alt="" class="col s10 push-s1 m6 push-m3 l3 push-l2 circle">
+        </div>
         <div class="col s10 push-s1 m10 push-m1 l5 push-l3 valign-wrapper hello-txt">
             <div>
                 <div class="row">
@@ -304,9 +306,19 @@
 
 
     $('div.project').hover(function () {
-        $('div.project > #show').toggleClass('show');
         $('div.project > #show').toggleClass('hide');
+        $('div.project > #show').toggleClass('show');
     });
+
+
+    if ($(window).width() < 992) {
+        $('#hamburger').removeClass('.hide');
+    }
+    else {
+        $('#hamburger').addClass('.hide');
+    }
+
+
 
 </script>
 
