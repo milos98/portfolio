@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet"
@@ -10,7 +11,6 @@
         media="screen,projection" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/materialize-social.css">
     <title>Miloš Janković</title>
@@ -25,7 +25,7 @@
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#about">About</a></li>
                 <li><a href="#work">My work</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" data-target="slide-out" class="sidenav-trigger" style="display:inline-block; margin: 0;">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -33,7 +33,7 @@
     <ul id="slide-out" class="sidenav">
         <li>
             <div class="user-view">
-                <a href="" class="brand-logo">LOGO</a>
+                <img src="img/head.jpg" alt="" class="center circle">
                 <span class="black-text name">
                     <h5>Miloš Janković</h5>
                 </span>
@@ -41,15 +41,6 @@
         </li>
         <li><a href="#!"><i class="material-icons">phone</i>+381 64 234 9682</a></li>
         <li><a href="mailto:milos.jankovic@fonis.rs"><i class="material-icons">email</i>milos.jankovic@fonis.rs</a></li>
-        <li>
-            <div class="divider"></div>
-        </li>
-        <li><a class="subheader">Nvigation</a></li>
-        <li>
-            <a href="#about" class="sidenav-close">About</a>
-            <a href="#work" class="sidenav-close">My work</a>
-            <a href="#contact" class="sidenav-close">Contact</a>
-        </li>
         <li>
             <div class="divider"></div>
         </li>
@@ -260,36 +251,7 @@
     <br>
 
     <div id="contact" class="contact row center">
-        <div class="col m6 l3 push-l2">
-            <p>
-                Email: <a href="mailto:milos.jankovic@fonis.rs">milos.jankovic@fonis.rs</a> <br>
-                Telephone: +381 64 234 9682 <br>
-                Github: <a href="http://www.github.com/milos98">www.github.com/milos98</a>
-            </p>
-        </div>
-
-        <!--
-        <div class="col m4 l2 push-l3 center">
-            <div style="display:inline-block">
-                &#10094;
-            </div>
-            <div class="center valign-wrapper" style="display:inline-block; padding: 15px;">
-                <br>
-                <strong>Feel free</strong> <br>
-                to contact me!
-            </div>
-            <div style="display:inline-block">
-                &#10095;
-            </div>
-        </div>
-    -->
-        <div class="col m6 l3 push-l4">
-            <p>
-                Facebook: <a href="http://www.facebook.com/MilosJankovicMJ">milos.jankovic@fonis.rs</a> <br>
-                Twitter: <a href="http://www.twitter.com/milos_98">www.github.com/milos98</a><br>
-                Instagram: <a href="http://www.instagram.com/milos.98">www.github.com/milos98</a>
-            </p>
-        </div>
+        <p>Copyright &#169; 2019 Miloš Janković</p>
     </div>
 </body>
 
@@ -313,16 +275,6 @@
         $('div.project > #show').toggleClass('hide');
         $('div.project > #show').toggleClass('show');
     });
-
-
-    if ($(window).width() < 600) {
-        $('#hamburger').removeClass('.hide');
-        $('.about-txt').removeClass('.valign-wrapper');
-    }
-    else {
-        $('#hamburger').addClass('.hide');
-        $('.about-txt').addClass('.valign-wrapper');
-    };
 
     if ($(window).width() < 800) {
         $('#show > div > p').addClass('hide');
