@@ -27,13 +27,16 @@ nav{
 }
 
 .hello {
-    padding-top: 5em; 
-    height: 100vh;
+    padding: 0;
+    height: -moz-calc(100vh - 64px);
+    height: -webkit-calc(100vh - 64px);
+    height: -o-calc(100vh - 64px);
+    height: calc(100vh - 64px);
     width: 100vw;
 }
 
-.hello-txt {
-    height: 25vw;
+.hello .row {
+    margin-bottom: 0;
 }
 
 .hello h2 {
@@ -58,8 +61,7 @@ nav{
 }
 
 .slider {
-  max-width: 1000px;
-  height: 32vw;
+  height: 39vw;
   margin: auto;
 }
 
@@ -67,12 +69,8 @@ nav{
     padding: 0.5em 0;
 }
 
-.projekat {
-  display: none;
-}
-
 .project{
-    height: 32vw;
+    height: 100%;
     padding: 0 !important;
     background-size: cover !important;
 }
@@ -105,6 +103,10 @@ nav{
 .arr {
     height: 100%;
     position: absolute;
+}
+
+.arr a{
+    padding: 30% 0;
 }
 
 .prev, .next {
@@ -171,21 +173,20 @@ nav{
 }
 
 @media (max-width: 992px){
-    .about .row {
-        height: 100vh;
-    }
-}
-
-@media (max-width: 992px){
     
     .hello div{
         display: block;
         text-align: center; 
     }
 
-    .about-txt {
-        margin-top: 1em;
+    .about-txt, .about-txt p{
+        margin-top: 0.4em;
         text-align: justify;
+        height: auto;
+    }
+
+    .slider{
+        height: 52vw;
     }
 
     .parallax-container {

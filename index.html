@@ -6,8 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
         media="screen,projection" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -19,13 +18,20 @@
 <body>
     <nav class="z-depth-0">
         <div class="nav-wrapper">
-            <a href="#" id="hamburger" data-target="slide-out" class="sidenav-trigger"><i
-                    class="material-icons">menu</i></a>
+            <a href="#" id="hamburger" data-target="slide-out" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
             <a href="" class="brand-logo">LOGO</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">My work</a></li>
-                <li><a href="#" data-target="slide-out" class="sidenav-trigger" style="display:inline-block; margin: 0;">Contact</a></li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#work">My work</a>
+                </li>
+                <li>
+                    <a href="#" data-target="slide-out" class="sidenav-trigger" style="display:inline-block; margin: 0;">Contact</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -39,49 +45,66 @@
                 </span>
             </div>
         </li>
-        <li><a href="#!"><i class="material-icons">phone</i>+381 64 234 9682</a></li>
-        <li><a href="mailto:milos.jankovic@fonis.rs"><i class="material-icons">email</i>milos.jankovic@fonis.rs</a></li>
+        <li>
+            <a href="#!">
+                <i class="material-icons">phone</i>+381 64 234 9682</a>
+        </li>
+        <li>
+            <a href="mailto:milos.jankovic@fonis.rs">
+                <i class="material-icons">email</i>milos.jankovic@fonis.rs</a>
+        </li>
+        <li class="show-on-medium-and-down">
+            <div class="divider"></div>
+        </li>
+        <li class="show-on-medium-and-down">
+            <a href="#about">About</a>
+            <a href="#work">My work</a>
+        </li>
         <li>
             <div class="divider"></div>
         </li>
-        <li><a class="subheader">Social</a></li>
         <li>
-            <a href="http://www.facebook.com/MilosJankovicMJ" class="social facebook" target="_blank"><i
-                    class="fa fa-facebook"></i>Facebook</a>
-            <a href="http://www.instagram.com/milos.98" class="social linkedin" target="_blank"><i
-                    class="fa fa-linkedin"></i>LinkedIn</a>
-            <a href="http://www.twitter.com/milos_98" class="social twitter" target="_blank"><i
-                    class="fa fa-twitter"></i>Twitter</a>
-            <a href="http://www.instagram.com/milos.98" class="social instagram" target="_blank"><i
-                    class="fa fa-instagram"></i>Instagram</a>
-            <a href="http://www.github.com/milos98" class="social github" target="_blank"><i
-                    class="fa fa-github"></i>Github</a>
+            <a class="subheader">Social</a>
+        </li>
+        <li>
+            <a href="http://www.facebook.com/MilosJankovicMJ" class="social facebook" target="_blank">
+                <i class="fa fa-facebook"></i>Facebook</a>
+            <a href="http://www.instagram.com/milos.98" class="social linkedin" target="_blank">
+                <i class="fa fa-linkedin"></i>LinkedIn</a>
+            <a href="http://www.twitter.com/milos_98" class="social twitter" target="_blank">
+                <i class="fa fa-twitter"></i>Twitter</a>
+            <a href="http://www.instagram.com/milos.98" class="social instagram" target="_blank">
+                <i class="fa fa-instagram"></i>Instagram</a>
+            <a href="http://www.github.com/milos98" class="social github" target="_blank">
+                <i class="fa fa-github"></i>Github</a>
         </li>
     </ul>
-    <div class="valign-wrapper">
-        <div class="hello row">
-            <img src="img/head.jpg" alt="" class="col s10 push-s1 m6 push-m3 l3 push-l2 circle">
-            <div class="col s10 push-s1 m10 push-m1 l5 push-l3 valign-wrapper hello-txt">
-                <div>
+
+    <div class="hello valign-wrapper">
+        <div class="row">
+            <img src="img/head.jpg" alt="" class="col s8 push-s2 m8 push-m2 l4 push-l1 circle">
+            <div class="col s10 push-s1 m10 push-m1 l5 push-l2 valign-wrapper">
+                <div class=" hello-txt">
                     <div class="row">
                         <h2>Welcome to my portfolio</h2>
                     </div>
                     <br>
                     <div class="row">
-                        <p>Lorem ipsum dolor sit amet consectetur. <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugiat sunt placeat
-                            neque.
+                        <p>Lorem ipsum dolor sit amet consectetur.
+                            <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fugiat sunt placeat neque.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <br>
 
     <div class="parallax-container">
-        <div class="parallax"><img src="img/par.jpg"></div>
+        <div class="parallax">
+            <img src="img/par.jpg">
+        </div>
     </div>
 
     <div class="container">
@@ -94,17 +117,14 @@
                 </div>
                 <div class="col s10 m10 l10 xl7 push-s1 push-m1 push-l1 push-xl1 valign-wrapper about-txt">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam enim officia inventore laudantium
-                        doloremque mollitia sequi accusamus recusandae id ipsum nisi exercitationem illo praesentium,
-                        dicta
-                        possimus quisquam. Ab doloribus eum eveniet corrupti incidunt est dolores dolorum sequi quaerat
-                        dolor. Repellendus itaque eveniet nulla veniam, fuga aspernatur quam ullam incidunt dicta sed
-                        nam
-                        accusantium in adipisci minima ratione accusamus assumenda. Provident accusantium velit illum
-                        voluptatum. Nulla dolore repudiandae libero sit necessitatibus eaque nihil dolor ullam obcaecati
-                        laudantium suscipit nobis maxime rerum autem ipsa omnis vel corrupti dolorem, officiis
-                        voluptates ex
-                        saepe. Possimus sapiente omnis dignissimos, incidunt officia nisi voluptates labore nesciunt?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam enim officia inventore laudantium doloremque mollitia sequi
+                        accusamus recusandae id ipsum nisi exercitationem illo praesentium, dicta possimus quisquam. Ab doloribus
+                        eum eveniet corrupti incidunt est dolores dolorum sequi quaerat dolor. Repellendus itaque eveniet
+                        nulla veniam, fuga aspernatur quam ullam incidunt dicta sed nam accusantium in adipisci minima ratione
+                        accusamus assumenda. Provident accusantium velit illum voluptatum. Nulla dolore repudiandae libero
+                        sit necessitatibus eaque nihil dolor ullam obcaecati laudantium suscipit nobis maxime rerum autem
+                        ipsa omnis vel corrupti dolorem, officiis voluptates ex saepe. Possimus sapiente omnis dignissimos,
+                        incidunt officia nisi voluptates labore nesciunt?
                     </p>
                 </div>
             </div>
@@ -115,17 +135,14 @@
                 </div>
                 <div class="col s10 m10 l10 xl7 push-s1 push-m1 push-l1 pull-xl4 valign-wrapper about-txt">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam enim officia inventore laudantium
-                        doloremque mollitia sequi accusamus recusandae id ipsum nisi exercitationem illo praesentium,
-                        dicta
-                        possimus quisquam. Ab doloribus eum eveniet corrupti incidunt est dolores dolorum sequi quaerat
-                        dolor. Repellendus itaque eveniet nulla veniam, fuga aspernatur quam ullam incidunt dicta sed
-                        nam
-                        accusantium in adipisci minima ratione accusamus assumenda. Provident accusantium velit illum
-                        voluptatum. Nulla dolore repudiandae libero sit necessitatibus eaque nihil dolor ullam obcaecati
-                        laudantium suscipit nobis maxime rerum autem ipsa omnis vel corrupti dolorem, officiis
-                        voluptates ex
-                        saepe. Possimus sapiente omnis dignissimos, incidunt officia nisi voluptates labore nesciunt?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam enim officia inventore laudantium doloremque mollitia sequi
+                        accusamus recusandae id ipsum nisi exercitationem illo praesentium, dicta possimus quisquam. Ab doloribus
+                        eum eveniet corrupti incidunt est dolores dolorum sequi quaerat dolor. Repellendus itaque eveniet
+                        nulla veniam, fuga aspernatur quam ullam incidunt dicta sed nam accusantium in adipisci minima ratione
+                        accusamus assumenda. Provident accusantium velit illum voluptatum. Nulla dolore repudiandae libero
+                        sit necessitatibus eaque nihil dolor ullam obcaecati laudantium suscipit nobis maxime rerum autem
+                        ipsa omnis vel corrupti dolorem, officiis voluptates ex saepe. Possimus sapiente omnis dignissimos,
+                        incidunt officia nisi voluptates labore nesciunt?
                     </p>
                 </div>
             </div>
@@ -134,17 +151,14 @@
                 <img src="img/about.jpg" alt="" class="col s10 m10 l10 xl4 push-s1 push-m1 push-l1">
                 <div class="col s10 m10 l10 xl7 push-s1 push-m1 push-l1 push-xl1 valign-wrapper about-txt">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam enim officia inventore laudantium
-                        doloremque mollitia sequi accusamus recusandae id ipsum nisi exercitationem illo praesentium,
-                        dicta
-                        possimus quisquam. Ab doloribus eum eveniet corrupti incidunt est dolores dolorum sequi quaerat
-                        dolor. Repellendus itaque eveniet nulla veniam, fuga aspernatur quam ullam incidunt dicta sed
-                        nam
-                        accusantium in adipisci minima ratione accusamus assumenda. Provident accusantium velit illum
-                        voluptatum. Nulla dolore repudiandae libero sit necessitatibus eaque nihil dolor ullam obcaecati
-                        laudantium suscipit nobis maxime rerum autem ipsa omnis vel corrupti dolorem, officiis
-                        voluptates ex
-                        saepe. Possimus sapiente omnis dignissimos, incidunt officia nisi voluptates labore nesciunt?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam enim officia inventore laudantium doloremque mollitia sequi
+                        accusamus recusandae id ipsum nisi exercitationem illo praesentium, dicta possimus quisquam. Ab doloribus
+                        eum eveniet corrupti incidunt est dolores dolorum sequi quaerat dolor. Repellendus itaque eveniet
+                        nulla veniam, fuga aspernatur quam ullam incidunt dicta sed nam accusantium in adipisci minima ratione
+                        accusamus assumenda. Provident accusantium velit illum voluptatum. Nulla dolore repudiandae libero
+                        sit necessitatibus eaque nihil dolor ullam obcaecati laudantium suscipit nobis maxime rerum autem
+                        ipsa omnis vel corrupti dolorem, officiis voluptates ex saepe. Possimus sapiente omnis dignissimos,
+                        incidunt officia nisi voluptates labore nesciunt?
                     </p>
                 </div>
             </div>
@@ -157,18 +171,13 @@
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 </div>
 
-                <div class="col s10 m10 l10 push-s1 push-m1 push-l1 project fade"
-                    style="background: url('img/img1.jpg');">
+                <div class="col s10 m10 l10 push-s1 push-m1 push-l1 project fade" style="background: url('img/img1.jpg');">
                     <div id="show" class="hide valign-wrapper ">
                         <div>
                             <h3>Projekat 1</h3>
-                            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet blanditiis fugit vero
-                                eum
-                                rem
-                                odio qui aspernatur deserunt ipsa quos sapiente commodi incidunt corrupti quibusdam
-                                doloribus
-                                aliquam asperiores quas, vel pariatur unde quasi laborum! Architecto totam esse vitae
-                                temporibus
+                            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet blanditiis fugit vero eum rem
+                                odio qui aspernatur deserunt ipsa quos sapiente commodi incidunt corrupti quibusdam doloribus
+                                aliquam asperiores quas, vel pariatur unde quasi laborum! Architecto totam esse vitae temporibus
                                 consequatur velit animi nulla id iste! Ut nesciunt minus adipisci illo!
                             </p>
                             <button class="btn" style="background-color:rgba(9,154,183, 0.51);">Pročitaj više</button>
@@ -176,18 +185,13 @@
                     </div>
                 </div>
 
-                <div class="col s10 m10 l10 push-s1 push-m1 push-l1 project fade"
-                    style="background: url('img/img2.jpg');">
+                <div class="col s10 m10 l10 push-s1 push-m1 push-l1 project fade" style="background: url('img/img2.jpg');">
                     <div id="show" class="hide valign-wrapper">
                         <div>
                             <h3>Projekat 1</h3>
-                            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet blanditiis fugit vero
-                                eum
-                                rem
-                                odio qui aspernatur deserunt ipsa quos sapiente commodi incidunt corrupti quibusdam
-                                doloribus
-                                aliquam asperiores quas, vel pariatur unde quasi laborum! Architecto totam esse vitae
-                                temporibus
+                            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet blanditiis fugit vero eum rem
+                                odio qui aspernatur deserunt ipsa quos sapiente commodi incidunt corrupti quibusdam doloribus
+                                aliquam asperiores quas, vel pariatur unde quasi laborum! Architecto totam esse vitae temporibus
                                 consequatur velit animi nulla id iste! Ut nesciunt minus adipisci illo!
                             </p>
                             <button class="btn" style="background-color:rgba(9,154,183, 0.51);">Pročitaj više</button>
@@ -195,18 +199,13 @@
                     </div>
                 </div>
 
-                <div class="col s10 m10 l10  push-s1 push-m1 push-l1 project fade"
-                    style="background: url('img/img3.jpg');">
+                <div class="col s10 m10 l10  push-s1 push-m1 push-l1 project fade" style="background: url('img/img3.jpg');">
                     <div id="show" class="hide valign-wrapper">
                         <div>
                             <h3>Projekat 1</h3>
-                            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet blanditiis fugit vero
-                                eum
-                                rem
-                                odio qui aspernatur deserunt ipsa quos sapiente commodi incidunt corrupti quibusdam
-                                doloribus
-                                aliquam asperiores quas, vel pariatur unde quasi laborum! Architecto totam esse vitae
-                                temporibus
+                            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet blanditiis fugit vero eum rem
+                                odio qui aspernatur deserunt ipsa quos sapiente commodi incidunt corrupti quibusdam doloribus
+                                aliquam asperiores quas, vel pariatur unde quasi laborum! Architecto totam esse vitae temporibus
                                 consequatur velit animi nulla id iste! Ut nesciunt minus adipisci illo!
                             </p>
                             <button class="btn" style="background-color:rgba(9,154,183, 0.51);">Pročitaj više</button>
@@ -214,18 +213,13 @@
                     </div>
                 </div>
 
-                <div class="col s10 m10 l10  push-s1 push-m1 push-l1 project fade"
-                    style="background: url('img/img4.jpg');">
+                <div class="col s10 m10 l10  push-s1 push-m1 push-l1 project fade" style="background: url('img/img4.jpg');">
                     <div id="show" class="hide valign-wrapper">
                         <div>
                             <h3>Projekat 1</h3>
-                            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet blanditiis fugit vero
-                                eum
-                                rem
-                                odio qui aspernatur deserunt ipsa quos sapiente commodi incidunt corrupti quibusdam
-                                doloribus
-                                aliquam asperiores quas, vel pariatur unde quasi laborum! Architecto totam esse vitae
-                                temporibus
+                            <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet blanditiis fugit vero eum rem
+                                odio qui aspernatur deserunt ipsa quos sapiente commodi incidunt corrupti quibusdam doloribus
+                                aliquam asperiores quas, vel pariatur unde quasi laborum! Architecto totam esse vitae temporibus
                                 consequatur velit animi nulla id iste! Ut nesciunt minus adipisci illo!
                             </p>
                             <button class="btn" style="background-color:rgba(9,154,183, 0.51);">Pročitaj više</button>
@@ -256,10 +250,10 @@
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 <script src="js/javascript.js"></script>
 <script>
+    
     M.AutoInit();
 
     $(document).ready(function () {
@@ -270,18 +264,33 @@
         $('.sidenav').sidenav();
     });
 
-
     $('div.project').hover(function () {
         $('div.project > #show').toggleClass('hide');
         $('div.project > #show').toggleClass('show');
     });
 
-    if ($(window).width() < 800) {
-        $('#show > div > p').addClass('hide');
-    }
-    else {
-        $('#show > div > p').removeClass('hide');
-    };
+    $(window).resize(function () {
+        if ($(window).width() < 1200) {
+            $('.about-txt').removeClass('valign-wrapper');
+        }
+        else {
+            $('.about-txt').addClass('valign-wrapper');
+        };
+
+        if ($(window).width() > 992) {
+            $('.show-on-medium-and-down').addClass('hide');
+        }
+        else {
+            $('.show-on-medium-and-down').removeClass('hide');
+        };
+
+        if ($(window).width() < 800) {
+            $('#show > div > p').addClass('hide');
+        }
+        else {
+            $('#show > div > p').removeClass('hide');
+        };
+    })
 
 </script>
 
