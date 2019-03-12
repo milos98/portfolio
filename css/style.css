@@ -162,13 +162,11 @@ nav{
 .contact {
     margin: 0;
     padding: 10px;
-    background: url("../img/foot.png");
-    background: -webkit-linear-gradient(to bottom, #FFFFFF, #9dddd9);
-    background: linear-gradient(to bottom, #FFFFFF, #9dddd9);
+    background: #707070;
 }
 
 .contact p{
-    color: #707070;
+    color: #fff;
     margin-bottom: 0;
 }
 
