@@ -56,6 +56,14 @@ nav{
     border: 0;
 }
 
+.collapsible-header {
+    background: #ebebeb !important;
+}
+
+.collapsible-header a {
+    color: rgba(0,0,0,0.87) !important;
+}
+
 .collapsible-body a {
     display: block;
 }
