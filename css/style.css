@@ -47,6 +47,24 @@ nav{
     font-size: 1.2em;
 }
 
+.user-view img {
+    height: 100px !important;
+    width: 100px !important;
+}
+
+.collapsible {
+    border: 0;
+}
+
+.collapsible-body a {
+    display: block;
+}
+
+.collapsible-body i {
+    display: inline-block;
+    margin: 0 32px;
+}
+
 .about .row {
     padding: 30px 0;
 }

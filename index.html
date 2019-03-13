@@ -36,7 +36,7 @@
         </div>
     </nav>
 
-    <ul id="slide-out" class="sidenav">
+    <ul id="slide-out" class="sidenav collapsible">
         <li>
             <div class="user-view">
                 <img src="img/head.jpg" alt="" class="center circle">
@@ -64,20 +64,19 @@
             <div class="divider"></div>
         </li>
         <li>
-            <a class="subheader">Social</a>
-        </li>
-        <li>
-            <a href="http://www.facebook.com/MilosJankovicMJ" class="social facebook" target="_blank">
-                <i class="fa fa-facebook"></i>Facebook</a>
-            <a href="http://www.instagram.com/milos.98" class="social linkedin" target="_blank">
-                <i class="fa fa-linkedin"></i>LinkedIn</a>
-            <a href="http://www.twitter.com/milos_98" class="social twitter" target="_blank">
-                <i class="fa fa-twitter"></i>Twitter</a>
-            <a href="http://www.instagram.com/milos.98" class="social instagram" target="_blank">
-                <i class="fa fa-instagram"></i>Instagram</a>
-            <a href="http://www.github.com/milos98" class="social github" target="_blank">
-                <i class="fa fa-github"></i>Github</a>
-        </li>
+            <div class="header collapsible-header">Social</div>
+            <div class="collapsible-body">
+                <a href="http://www.facebook.com/MilosJankovicMJ" class="social facebook" target="_blank">
+                    <i class="fa fa-facebook"></i>Facebook</a>
+                <a href="http://www.instagram.com/milos.98" class="social linkedin" target="_blank">
+                    <i class="fa fa-linkedin"></i>LinkedIn</a>
+                <a href="http://www.twitter.com/milos_98" class="social twitter" target="_blank">
+                    <i class="fa fa-twitter"></i>Twitter</a>
+                <a href="http://www.instagram.com/milos.98" class="social instagram" target="_blank">
+                    <i class="fa fa-instagram"></i>Instagram</a>
+                <a href="http://www.github.com/milos98" class="social github" target="_blank">
+                    <i class="fa fa-github"></i>Github</a>
+            </div>
     </ul>
 
     <div class="hello valign-wrapper">
@@ -253,7 +252,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 <script src="js/javascript.js"></script>
 <script>
-    
+
     M.AutoInit();
 
     $(document).ready(function () {
@@ -262,6 +261,10 @@
 
     $(document).ready(function () {
         $('.sidenav').sidenav();
+    });
+
+    $(document).ready(function () {
+        $('.collapsible').collapsible();
     });
 
     $('div.project').hover(function () {
