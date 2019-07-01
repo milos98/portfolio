@@ -207,6 +207,11 @@ nav .logo {
         text-align: center; 
     }
 
+    nav .brand-logo-small {
+        right: 0 !important;
+        float: right;
+    }
+
     .about-txt, .about-txt p{
         margin-top: 0.4em;
         text-align: justify;
