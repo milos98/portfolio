@@ -26,6 +26,11 @@ nav{
     color: #707070;
 }
 
+nav .logo {
+    height: 55px;
+    width: auto;
+}
+
 .hello {
     padding: 0;
     height: -moz-calc(100vh - 64px);
@@ -106,16 +111,16 @@ nav{
 }
 
 .show {
-    background-color: rgba(0, 0, 0, 0.53);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 0 !important;
     margin: 0 !important;
     color: #bbb;
     height: 100%;
     width: 100%;
-    -webkit-transition: all 2s ease;
-    -moz-transition: all 2s ease;
-    -o-transition: all 2s ease;
-    transition: all 2s ease;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
 }
 
 #show h3{
@@ -132,7 +137,7 @@ nav{
 }
 
 .arr a{
-    padding: 30% 0;
+    padding: 40% 0;
 }
 
 .prev, .next {
@@ -168,7 +173,7 @@ nav{
   background-color: #707070;
 }
 
-.fade {
+.fade { /*duplirano - treba obrisati*/
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
