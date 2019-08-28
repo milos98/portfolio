@@ -32,7 +32,7 @@ nav .logo {
 }
 
 .hello {
-    padding: 0;
+    padding: 1;
     height: -moz-calc(100vh - 64px);
     height: -webkit-calc(100vh - 64px);
     height: -o-calc(100vh - 64px);
@@ -110,17 +110,13 @@ nav .logo {
     padding: 1em 2em;
 }
 
-.show {
+#show {
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 0 !important;
+    padding: 0 15% !important;
     margin: 0 !important;
     color: #bbb;
     height: 100%;
     width: 100%;
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1s;
-    animation-name: fade;
-    animation-duration: 1s;
 }
 
 #show h3{
@@ -136,8 +132,13 @@ nav .logo {
     position: absolute;
 }
 
+.arr-right {
+    right: 0 !important;
+}
+
 .arr a{
     padding: 40% 0;
+    border-radius: 0.2em;
 }
 
 .prev, .next {
@@ -154,9 +155,30 @@ nav .logo {
 }
 
 .prev:hover, .next:hover {
+    color: white;
+  }
+
+.arr:hover, .arr:hover {
   background-color: #707070;
-  color: #bbb;
+  color: white;
 }
+
+.fade { /*duplirano - treba obrisati*/
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: .5s;
+    animation-name: fade;
+    animation-duration: .5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
 
 .dot {
   cursor: pointer;
@@ -173,27 +195,10 @@ nav .logo {
   background-color: #707070;
 }
 
-.fade { /*duplirano - treba obrisati*/
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
 .contact {
     margin: 0;
     padding: 10px;
-    background: #707070;
+    background: #252525;
 }
 
 .contact p{
