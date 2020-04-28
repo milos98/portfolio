@@ -179,76 +179,21 @@
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
 
-                <div class="project fade" style="background: url('img/hzs.png');">
+                <div id="%id-temp%" class="project fade" style="%style-temp%">
                     <div id="show" class="hide valign-wrapper ">
                         <div>
-                            <h3>Hakaton za srednjoškolce</h3>
-                            <p>
-                                HR coordinator
-                            </p>
-                            <a href="http://hzs.fonis.rs"><button class="btn" style="background-color:rgba(9,154,183, 0.51);">Pročitaj više</button></a>
+                            <h3 id="%project-name-temp%"></h3>
+                            <p id="%position-temp%"></p>
+                            <a id="%a%" href="%link-temp%"><button class="btn" style="background-color:rgba(9,154,183, 0.51);">Pročitaj više</button></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="project fade" style="background: url('img/FON.png');">
-                    <div id="show" class="hide valign-wrapper">
-                        <div>
-                            <h3>Student Mentor</h3>
-                            <p>Mentoring younger students (approximately 60 people) which includes giving them advice and any
-                                information needed about every insecurity or uncertainty. In addition, it is preferable to
-                                hold several and various sessions with them which contain workshops, additional preparations
-                                for their exams, team-building games, etc
-                            </p>
-                            <a href="http://www.fon.rs"><button class="btn" style="background-color:rgba(9,154,183, 0.51);">Pročitaj više</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project fade" style="background: url('img/jf18.jpg');">
-                    <div id="show" class="hide valign-wrapper">
-                        <div>
-                            <h3>JobFair18</h3>
-                            <p>
-                                Case Study Coordinator
-                            </p>
-                            <a href="http://www.jobfair.rs"><button class="btn" style="background-color:rgba(9,154,183, 0.51);">Pročitaj više</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project fade" style="background: url('img/fonhakaton.png');">
-                    <div id="show" class="hide valign-wrapper">
-                        <div>
-                            <h3>FONHakaton</h3>
-                            <p>
-                                HR team member
-                            </p>
-                            <a href="http://hakaton.fonis.rs"><button class="btn" style="background-color:rgba(9,154,183, 0.51);">Pročitaj više</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project fade" style="background: url('img/s2s2018.png');">
-                    <div id="show" class="hide valign-wrapper">
-                        <div>
-                            <h3>S2S 2018</h3>
-                            <p>
-                                Design team member
-                            </p>
-                            <a href="http://s2s.fonis.rs"><button class="btn" style="background-color:rgba(9,154,183, 0.51);">Pročitaj više</button></a>
-                        </div>
-                    </div>
-                </div>
             </div>
             <br>
 
-            <div class="row" style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
+            <div class="dots row" style="text-align:center">
+                <span id="dot" class="dot" onclick="currentSlide(%id%)"></span>
             </div>
         </div>
     </div>
@@ -263,7 +208,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-<script src="js/javascript.js"></script>
+<script src="js/slider.js"></script>
 <script>
 
     M.AutoInit();
