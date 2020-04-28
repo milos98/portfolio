@@ -8,6 +8,10 @@ body{
     overflow-x: hidden;
 }
 
+h2, br, img {
+    user-select: none;
+}
+
 nav{
     background-color: transparent;
 }
@@ -29,6 +33,10 @@ nav{
 nav .logo {
     height: 55px;
     width: auto;
+}
+
+.sidenav {
+    width: 22em;
 }
 
 .hello {
@@ -104,6 +112,7 @@ nav .logo {
     height: 100%;
     padding: 0 !important;
     background-size: cover !important;
+    user-select: none;
 }
 
 .project p {
