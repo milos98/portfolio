@@ -66,7 +66,7 @@
         <li>
             <div class="divider"></div>
         </li>
-        <li>
+        <li class="active">
             <div class="collapsible-header">
                 <a class="header">Social</a>
             </div>
@@ -256,7 +256,7 @@
     <br>
 
     <div id="contact" class="contact row center">
-        <p>Copyright &#169; 2019 Miloš Janković</p>
+        <p id="contact-text"></p>
     </div>
 </body>
 
@@ -269,15 +269,7 @@
     M.AutoInit();
 
     $(document).ready(function () {
-        $('.parallax').parallax();
-    });
-
-    $(document).ready(function () {
-        $('.sidenav').sidenav();
-    });
-
-    $(document).ready(function () {
-        $('.collapsible').collapsible();
+        document.getElementById('contact-text').innerHTML = "Copyright &#169; " + (new Date()).getUTCFullYear() + ". Miloš Janković";
     });
 
     $('div.slider').mouseenter(function () {
