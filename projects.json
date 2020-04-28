@@ -1,0 +1,46 @@
+{
+    "projects":[
+        {
+            "id": "0",
+            "project_name": "S2S 2017",
+            "position": "Design team member",
+            "link": "https://s2s.fonis.rs",
+            "image": "s2s2018.png"
+        },
+        {
+            "id": "1",
+            "project_name": "FONHakaton 2018",
+            "position": "HR team member",
+            "link": "https://hakaton.fonis.rs",
+            "image": "fonhakaton.png"
+        },
+        {
+            "id": "2",
+            "project_name": "Job Fair 18",
+            "position": "Case Study Coordinator",
+            "link": "https://www.jobfair.rs",
+            "image": "jf18.jpg"
+        },
+        {
+            "id": "3",
+            "project_name": "Student mentor",
+            "position": "Mentoring younger students (approximately 60 people) which includes giving them advice and any information needed about every insecurity or uncertainty. In addition, it is preferable to hold several and various sessions with them which contain workshops, additional preparations for their exams, team-building games, etc.",
+            "link": "https://www.fon.bg.ac.rs",
+            "image": "FON.png"
+        },
+        {
+            "id": "4",
+            "project_name": "High School Hackathon",
+            "position": "HR Coordinator",
+            "link": "https://hzs.fonis.rs",
+            "image": "hzs.png"
+        },
+        {
+            "id": "5",
+            "project_name": "FONIS",
+            "position": "Vice President of Human Resources",
+            "link": "https://www.fonis.rs",
+            "image": "fonis.jpg"
+        }
+    ]
+}
