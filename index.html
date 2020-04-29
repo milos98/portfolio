@@ -91,11 +91,13 @@
     </ul>
 
     <div class="hello valign-wrapper">
-        <div class="row">
-            <img src="img/head.jpg" alt="" class="col s8 push-s2 m8 push-m2 l4 push-l1 circle">
+        <div class="row valign-wrapper">
+            <div class="col s10 push-s1 l6">
+                <img src="img/head.jpg" alt="" class="col s8 push-s2 circle">
+            </div>
             
-            <div class="col s10 push-s1 m10 push-m1 l5 push-l2 valign-wrapper">
-                <div class=" hello-txt">
+            <div class="col s10 push-s1 l6 valign-wrapper">
+                <div class=" hello-txt col s10 push-s1">
                     <div class="row">
                         <h2>Welcome to my portfolio</h2>
                     </div>
@@ -224,6 +226,13 @@
 
     $(document).ready(function () {
         document.getElementById('contact-text').innerHTML = "Copyright &#169; " + (new Date()).getUTCFullYear() + ". Miloš Janković";
+        if ($(window).width() < 600) {
+            $('.about-txt').removeClass('valign-wrapper');
+        };
+        if ($(window).width() < 768) {
+            $('.hello').addClass('mobile');
+            $('.hello > .row > div').removeClass('m6');
+        };
     });
 
     $('div.slider').mouseenter(function () {
@@ -256,6 +265,16 @@
         else {
             $('#show > div > p').addClass('hide');
         };
+        if ($(window).width() < 768){
+            $('.hello').addClass('mobile');
+            $('.hello > .row > div').removeClass('m6');
+            
+        }
+        else {
+            $('.hello').removeClass('mobile');
+            $('.hello > .row > div').addClass('m6');
+        };
+        
     })
 
 </script>

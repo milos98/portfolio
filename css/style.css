@@ -14,6 +14,7 @@ h2, br, img {
 
 nav{
     background-color: transparent;
+    display: block;
 }
 
 .nav-wrapper {
@@ -36,20 +37,29 @@ nav .logo {
 }
 
 .sidenav {
-    width: 22em;
+    width: 25em;
 }
 
 .hello {
     padding: 1;
-    height: -moz-calc(100vh - 64px);
-    height: -webkit-calc(100vh - 64px);
-    height: -o-calc(100vh - 64px);
-    height: calc(100vh - 64px);
+    min-height: -moz-calc(100vh - 4em);
+    min-height: -webkit-calc(100vh - 4em);
+    min-height: -o-calc(100vh - 4em);
+    min-height: calc(100vh - 4em);
     width: 100vw;
+}
+
+.mobile *{
+    display: block!important;
+    text-align: center;
 }
 
 .hello .row {
     margin-bottom: 0;
+}
+
+.hello-txt {
+    margin-left: 0!important;
 }
 
 .hello h2 {
@@ -214,12 +224,11 @@ nav .logo {
     color: #fff;
 }
 
+.circle {
+    max-height: 80vh;
+}
+
 @media (max-width: 992px){
-    
-    .hello div{
-        display: block;
-        text-align: center; 
-    }
 
     nav .brand-logo-small {
         right: 0 !important;

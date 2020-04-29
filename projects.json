@@ -10,7 +10,7 @@
         {
             "id": "1",
             "project_name": "FONHakaton 2018",
-            "position": "HR team member",
+            "position": "Human Resources team member",
             "link": "https://hakaton.fonis.rs",
             "image": "fonhakaton.png"
         },
@@ -31,7 +31,7 @@
         {
             "id": "4",
             "project_name": "High School Hackathon",
-            "position": "HR Coordinator",
+            "position": "Human Resources Coordinator",
             "link": "https://hzs.fonis.rs",
             "image": "hzs.png"
         },
